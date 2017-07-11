@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Didot";
+  src:url("DidotLTStd-Roman.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DidotItalic";
+  src:url("DidotLTStd-Italic.otf");
+  font-weight: normal;
+  font-style: oblique italic;
+}
+@font-face {
+  font-family: "DidotBold";
+  src:url("DidotLTStd-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  background: url("verticalEnterImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 80%;
+}
+
+
+.logoClass, .linksToPortfolioAndContact {
+width: 100%;
+
+}
+
+.logoClass {
+  display: flex;
+  justify-content: center;
+}
+
+.logoClass img {
+  max-width: 75%;
+  max-height: 75%;
+  align-items: center;
+  align-self: center;
+}
+
+
+
+.linksToPortfolioAndContact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.linksToPortfolioAndContact li{
+list-style: none;
+}
+
+.linksToPortfolioAndContact a {
+  text-decoration: none;
+  color: white;
+  font-family: "Didot";
+  font-size: 1.5em;
+  line-height: 3.0em;
+}
