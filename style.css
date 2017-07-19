@@ -147,12 +147,14 @@ margin-bottom: auto;
 }
 .linksToPortfolioAndContact li {
 list-style: none;
+font-size: 1.75em;
+line-height: 3.0em;
 }
 .linksToPortfolioAndContact a {
   text-decoration: none;
   color: white;
   font-family: "Didot", serif;
-  font-size: 2.0em;
+  font-size: 2.5em;
   line-height: 3.0em;
 }
 
@@ -171,7 +173,7 @@ list-style: none;
   text-decoration: none;
   color: white;
   font-family: "Didot", serif;
-  font-size: 2.0em;
+  font-size: 2.25em;
   line-height: 2.0em;
 }
 .linkstoHomeAndContact {
@@ -190,7 +192,7 @@ list-style: none;
   text-decoration: none;
   color: white;
   font-family: "Didot", serif;
-  font-size: 2.0em;
+  font-size: 2.25em;
   line-height: 2.0em;
 
 }
@@ -223,22 +225,26 @@ list-style: none;
   font-family: "Didot";
   color: white;
   font-size: 2.0em;
-  line-height: 2.25em;
+  line-height: 2.0em;
+  padding-bottom: 50px;
 
 }
 .portfolioDescriptionParagraph h1 {
   font-family: "Daydreamer";
-  font-size: 3.0em;
+  font-size: 2.5em;
   -webkit-margin-after: 0;
   margin-top: 10%;
+
 }
 
 .arrowNav {
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
+  /*align-items: stretch;
   align-content: stretch;
-  align-self: flex-end;
+  align-self: flex-end;*/
+  margin-top: auto;
+
   /*width: 100%;
   display: flex;
   flex-direction: row;
@@ -258,12 +264,10 @@ list-style: none;
 	.bigContainer {
 	margin-top: 60%;
 	}
-
   .logoClass img {
     max-width: 60%;
     max-height: 60%;
   }
-
 	.linksToPortfolioAndContact a {
 		font-size: 1.5em;
 		line-height: 4.0em;
@@ -273,9 +277,12 @@ list-style: none;
   font-size: 2.25em;
 }
 .logoClassContact img {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 35%;
+  max-height: 35%;
 }
+
+
+
 
 @media (min-width: 1080px) {
 
