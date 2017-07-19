@@ -16,15 +16,48 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Daydreamer";
+  src:url("Daydreamer.ttf");
+  font-weight: normal;
+  font-style: normal;
 
+}
+html, body, .bigContainer, .contactPageFlex, .portfolioClickThroughFlex {
+  height: 100%;
+}
 
-body {
+.enterPage {
   margin: 0;
   background: url("verticalEnterImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
 }
+
+.contactPage {
+  margin: 0;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, .15) 0%,
+      rgba(0, 0, 0, .25) 100%
+    ),
+  url("verticalContactPageImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.portfolioBody {
+  background-color: #E8DEE3;
+
+}
+
+.logoClass, .linksToPortfolioAndContact, .logoClassContact, .linksToPortfolioAndEnterPage, .linkstoHomeAndContact, .arrownav, .portfolioBody {
+width: 100%;
+
+}
+
 
 .bigContainer {
   display: flex;
@@ -33,17 +66,34 @@ body {
   margin-top: 80%;
 }
 
-
-.logoClass, .linksToPortfolioAndContact {
-width: 100%;
-
+.contactPageFlex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  height: 100%;
 }
+
+.portfolioClickThroughFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  /*align-content: flex-start;*/
+  margin: 5%;
+  /*flex: 1 0 auto;*/
+}
+
+
+
+
 
 .logoClass {
   display: flex;
   justify-content: center;
 }
-
 .logoClass img {
   max-width: 75%;
   max-height: 75%;
@@ -51,21 +101,217 @@ width: 100%;
   align-self: center;
 }
 
+.logoClassContact{
+  display: flex;
+  justify-content: flex-end;
+}
+.logoClassContact img {
+  max-width: 50%;
+  max-height: 50%;
+  align-self: flex-end;
+  padding: 25px;
+}
+
+.imagesInAContainer {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /*align-items:flex-start;
+  align-content: flex-start;*/
+}
+.imagesInAContainer img {
+  }
+
+.portfolioImages {
+width: 30%;
+flex-wrap: nowrap;
+/*border-style: solid;
+border-width: 5px;
+border-color: white;*/
+padding: 5px;
+margin-bottom: auto;
+/*height: 100%;*/
+}
+.portfolioImages img {
+}
+
+.portfolioImages:first-child {
+  width: 100%;
+  max-width: 100%;
+}
 
 
 .linksToPortfolioAndContact {
   display: flex;
   justify-content: space-around;
 }
-
-.linksToPortfolioAndContact li{
+.linksToPortfolioAndContact li {
 list-style: none;
 }
-
 .linksToPortfolioAndContact a {
   text-decoration: none;
   color: white;
-  font-family: "Didot";
-  font-size: 1.5em;
+  font-family: "Didot", serif;
+  font-size: 1.75em;
   line-height: 3.0em;
+}
+
+.linksToPortfolioAndEnterPage {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex: 1;
+}
+
+.linksToPortfolioAndEnterPage li {
+  list-style: none;
+
+}
+.linksToPortfolioAndEnterPage a {
+  text-decoration: none;
+  color: white;
+  font-family: "Didot", serif;
+  font-size: 2.0em;
+  line-height: 2.0em;
+}
+.linkstoHomeAndContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  align-self: flex-end;
+}
+
+.linkstoHomeAndContact li {
+  list-style: none;
+}
+
+.linkstoHomeAndContact a {
+  text-decoration: none;
+  color: white;
+  font-family: "Didot", serif;
+  font-size: 2.0em;
+  line-height: 2.0em;
+
+}
+
+
+
+.emailInfoAndLink {
+  color: white;
+  font-family: "Didot", sans-serif;
+  font-size: 1.5em;
+  line-height: 0em;
+  flex: 1;
+  margin-left: 25px;
+
+}
+
+.emailInfoAndLink a {
+  text-decoration: none;
+  color: white;
+}
+
+.emailInfoAndLink p {
+  font-family: "Daydreamer";
+  font-size: 2.0em;
+}
+
+.portfolioDescriptionParagraph {
+  flex-wrap: wrap;
+  max-width: 80%;
+  font-family: "Didot";
+  color: white;
+  font-size: 1.25em;
+  line-height: 1.5em;
+
+}
+.portfolioDescriptionParagraph h1 {
+  font-family: "Daydreamer";
+  font-size: 2.5em;
+  -webkit-margin-after: 0;
+  margin-top: 10%;
+}
+
+.arrowNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  align-self: flex-end;
+  /*width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;*/
+  margin: 10%;
+  position: relative;
+  }
+
+.arrowNav img {
+  max-height: 50px;
+
+}
+
+@media (min-width: 600px){
+
+	.bigContainer {
+	margin-top: 60%;
+	}
+
+  .logoClass img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+	.linksToPortfolioAndContact a {
+		font-size: 1.5em;
+		line-height: 4.0em;
+	}
+}
+.emailInfoAndLink {
+  font-size: 2.25em;
+}
+.logoClassContact img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
+@media (min-width: 1080px) {
+
+.bigContainer {
+  position: absolute;
+  margin-top: 25px;
+  align-items: flex-start;
+
+  }
+
+.logoClass {
+  justify-content: flex-start;
+  padding-bottom: 25px;
+  margin-left: 25px;
+}
+.logoClass img {
+align-items: flex-start;
+align-self: flex-start;
+max-width: 40%;
+max-height: 40%;
+}
+
+.linksToPortfolioAndContact a {
+  font-size: 2.0em;
+  line-height: 1.5em;
+}
+
+.linksToPortfolioAndContact {
+  flex-flow: column;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.emailInfoAndLink {
+  font-size: 2.5em;
+}
+
 }
