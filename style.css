@@ -23,7 +23,7 @@
   font-style: normal;
 
 }
-html, body, .bigContainer, .contactPageFlex, .portfolioClickThroughFlex {
+html, body, .contactPageFlex, .portfolioClickThroughFlex {
   height: 100%;
 }
 
