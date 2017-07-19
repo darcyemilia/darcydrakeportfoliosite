@@ -281,7 +281,9 @@ line-height: 3.0em;
   max-height: 35%;
 }
 
-
+.portfolioDescriptionParagraph {
+  max-width: 100%;
+}
 
 
 @media (min-width: 1080px) {
@@ -319,5 +321,60 @@ max-height: 40%;
 .emailInfoAndLink {
   font-size: 2.5em;
 }
+.portfolioClickThroughFlex {
+  max-width: 100%;
+  max-height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.arrowNav {
+  width: 40%;
+  justify-content: center;
+}
+
+.arrowNav img {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+
+.imagesInAContainer {
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*align-items:flex-start;
+  align-content: flex-start;*/
+}
+.imagesInAContainer img {
+  }
+
+.portfolioImages {
+width: 25%;
+flex-wrap: nowrap;
+/*border-style: solid;
+border-width: 5px;
+border-color: white;*/
+padding: 5px;
+margin-bottom: auto;
+/*height: 100%;*/
+}
+.portfolioImages img {
+}
+
+.portfolioImages:first-child {
+  width: 80%;
+  max-width: 80%;
+}
+
+.portfolioDescriptionParagraph {
+  max-width: 50%;
+}
+
+
+
+
+
+
 
 }
