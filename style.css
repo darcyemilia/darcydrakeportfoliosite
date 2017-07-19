@@ -32,7 +32,6 @@ html, body, .bigContainer, .contactPageFlex, .portfolioClickThroughFlex {
   background: url("verticalEnterImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .contactPage {
@@ -45,7 +44,7 @@ html, body, .bigContainer, .contactPageFlex, .portfolioClickThroughFlex {
   url("verticalContactPageImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+
 }
 
 .portfolioBody {
