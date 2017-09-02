@@ -302,23 +302,25 @@ line-height: 3.0em;
 
 .logoClass {
   justify-content: flex-start;
-  padding-bottom: 25px;
+  /*padding-bottom: 25px;*/
   margin-left: 25px;
 }
 .logoClass img {
 align-items: flex-start;
 align-self: flex-start;
-max-width: 40%;
-max-height: 40%;
+max-width: 35%;
+max-height: 35%;
 }
 
 .linksToPortfolioAndContact a {
-  font-size: 2.0em;
-  line-height: 1.5em;
+  font-size: 1.0em;
+  line-height: 1.0em;
+  padding-right: 40px;
+  padding-left: 50px;
 }
 
 .linksToPortfolioAndContact {
-  flex-flow: column;
+  /*flex-flow: column;*/
   justify-content: flex-start;
   margin-left: 25px;
 }
